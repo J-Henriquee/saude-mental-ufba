@@ -1,0 +1,30 @@
+# =========================
+# SEGURANÇA DE DADOS (CRÍTICO)
+# =========================
+data/01_raw/
+*.csv
+*.tsv
+*.xlsx
+*.json
+
+# =========================
+# Python e Ambientes Virtuais
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# =========================
+# Jupyter Notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Sistema Operacional (Ubuntu/Linux/Mac/Win)
+# =========================
+.DS_Store
+Thumbs.db
