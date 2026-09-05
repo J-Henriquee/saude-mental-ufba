@@ -43,8 +43,6 @@ saude-mental-ufba/
 - Python 3.10+
 - pip
 
-Nenhum Docker necessário. O ambiente local com `venv` é suficiente para este projeto.
-
 ---
 
 ## Setup local
@@ -81,8 +79,6 @@ Exporte as respostas do Google Forms como CSV e salve em:
 ```
 data/raw/formulario_ic_ufba_raw.csv
 ```
-
-> ⚠️ Nunca versione arquivos com dados pessoais identificáveis. O `.gitignore` já cobre `data/raw/`.
 
 ---
 
