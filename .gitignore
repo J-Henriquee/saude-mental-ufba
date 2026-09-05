@@ -1,30 +1,48 @@
-# =========================
-# SEGURANÇA DE DADOS (CRÍTICO)
-# =========================
-data/01_raw/
+# ======================
+# DADOS — nunca versionar
+# ======================
+data/raw/
+data/processed/
 *.csv
-*.tsv
 *.xlsx
 *.json
 
-# =========================
-# Python e Ambientes Virtuais
-# =========================
+# ======================
+# AMBIENTE PYTHON
+# ======================
+.venv/
+venv/
 __pycache__/
 *.py[cod]
-*$py.class
-venv/
-.venv/
-env/
-.env
+*.egg-info/
+dist/
+build/
+.eggs/
 
-# =========================
-# Jupyter Notebooks
-# =========================
+# ======================
+# JUPYTER
+# ======================
 .ipynb_checkpoints/
+*.ipynb_checkpoints
 
-# =========================
-# Sistema Operacional (Ubuntu/Linux/Mac/Win)
-# =========================
+# ======================
+# SISTEMA OPERACIONAL
+# ======================
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# ======================
+# EDITORES / IDEs
+# ======================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ======================
+# VARIÁVEIS DE AMBIENTE
+# ======================
+.env
+.env.*
+secrets.txt
