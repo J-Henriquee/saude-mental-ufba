@@ -1,48 +1,10 @@
 # ======================
-# DADOS — nunca versionar
+# DADOS — nunca versionar o bruto
 # ======================
 data/raw/
-data/processed/
-*.csv
 *.xlsx
 *.json
 
-# ======================
-# AMBIENTE PYTHON
-# ======================
-.venv/
-venv/
-__pycache__/
-*.py[cod]
-*.egg-info/
-dist/
-build/
-.eggs/
-
-# ======================
-# JUPYTER
-# ======================
-.ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# ======================
-# SISTEMA OPERACIONAL
-# ======================
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# ======================
-# EDITORES / IDEs
-# ======================
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# ======================
-# VARIÁVEIS DE AMBIENTE
-# ======================
-.env
-.env.*
-secrets.txt
+# Permitir expressamente os dados processados e dicionários limpos
+!data/processed/
+!docs/dicionario_forms.csv

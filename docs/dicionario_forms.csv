@@ -1,0 +1,37 @@
+﻿nome_variavel,nome_legivel,secao_formulario,dtype_pandas,tipo_semantico,n_total,pct_missing,sensibilidade,usar_no_modelo
+Carimbo de data/hora,Timestamp,Metadados,str,datetime,46,0.0,baixa,nao
+Qual a área do seu curso? (lista baseada no catálogo de cursos da UFBA),Area do Curso,Academico,str,constante,46,0.0,baixa,nao
+Coluna 2,Curso,Academico,str,categorica_nominal,46,0.0,baixa,sim
+Coluna 3,Nao mapeado,Geral,str,constante,46,100.0,indefinido,avaliar
+Coluna 4,Nao mapeado,Geral,str,constante,46,100.0,indefinido,avaliar
+Coluna 5,Nao mapeado,Geral,float64,constante,46,100.0,indefinido,avaliar
+Coluna 6,Nao mapeado,Geral,str,constante,46,100.0,indefinido,avaliar
+Coluna 7,Nao mapeado,Geral,str,constante,46,100.0,indefinido,avaliar
+"Qual seu semestre de ingresso na UFBA?
+Digite no seguinte formato: ANO.SEMESTRE (ex.: 2024.1; 2018.2)",Semestre de Ingresso,Academico,float64,temporal_ordinal,46,0.0,baixa,sim
+"Qual é o seu CR? Caso não queira informar, ignore essa questão.",CR,Academico,float64,continua,46,65.2,baixa,sim
+O seu ensino pré-faculdade foi em:,Tipo de Escola Base,Demografico,str,binaria,46,50.0,baixa,sim
+Qual foi a sua forma de ingresso na Universidade?,Forma de Ingresso,Demografico,str,binaria,46,50.0,baixa,sim
+Com qual identidade de gênero você se identifica?,Genero,Demografico,str,categorica_nominal,46,50.0,baixa,sim
+Você se autodeclara:,Raca/Cor,Demografico,str,categorica_nominal,46,50.0,baixa,sim
+Você está na Universidade em quais turnos?,Turnos de Estudo,Rotina,str,categorica_nominal,46,50.0,baixa,sim
+"Como você avalia a sua carga acadêmica atual? (1 sendo mais leve, 5 sendo mais pesada)",Percepcao Carga Academica,Rotina,int64,ordinal,46,0.0,media,sim
+"O quão frequentemente você se sente sobrecarregado(a) com as demandas universitárias? 
+(1 sendo nada frequente, 5 sendo o tempo todo)",Frequencia Sobrecarga,Saude Mental,int64,ordinal,46,0.0,media,sim
+"Quantas horas, em média, você tem de tempo efetivo de estudo por dia (não incluso tempo dentro de sala de aula)? Digite abaixo apenas o número.",Horas Estudo Diario,Rotina,float64,continua,46,0.0,baixa,sim
+Qual o tempo médio (em minutos) que leva para você chegar à UFBA? Digite apenas o número.,Tempo Deslocamento,Rotina,int64,continua,46,0.0,baixa,sim
+Quanto tempo do seu dia você passa na universidade?,Tempo na UFBA,Rotina,str,categorica_nominal,46,0.0,baixa,sim
+"Você trabalha? Se sim, é CLT, PJ, estágio, Jovem Aprendiz...?",Trabalha,Socioeconomico,str,categorica_nominal,46,0.0,baixa,sim
+"Você participa de atividades extracurriculares? (iniciação científica, empresa JR, liga acadêmica...)",Atividades Extracurriculares,Academico,str,binaria,46,0.0,baixa,sim
+Você sente dificuldade em acompanhar as disciplinas?,Dificuldade Academica,Academico,str,binaria,46,0.0,media,sim
+"Você sente que seu desempenho reflete no seu bem estar, no dia a dia?",Impacto Bem Estar,Saude Mental,str,binaria,46,0.0,media,sim
+"Das seguintes, quais são as dificuldades específicas que mais lhe afetam? Marque todas as quais se identifica.",Dificuldades Especificas,Academico,str,categorica_multilabel,46,0.0,baixa,avaliar
+Você já considerou abandonar seu curso atual nos últimos 6 meses?,Risco Evasao,Academico,str,binaria,46,0.0,alta,sim
+Qual é a maior dificuldade que você enfrenta na universidade hoje?,Maior Dificuldade Aberta,Academico,str,texto_livre,46,21.7,baixa,nao
+Como você encontrou esse formulário?,Origem Resposta,Metadados,str,categorica_nominal,46,50.0,baixa,nao
+"Você faz ou já fez acompanhamento profissional na área da saúde mental (psicólogo, neuropsicólogo, psiquiatra, etc...)?",Acompanhamento Psicologico,Saude Mental,str,categorica_nominal,46,0.0,alta,sim
+Qual é (era) a modalidade das suas sessões?,Modalidade Terapia,Saude Mental,str,categorica_nominal,46,21.7,alta,avaliar
+Com que frequência você realiza (ou realizava) as sessões?,Frequencia Terapia,Saude Mental,str,categorica_nominal,46,21.7,alta,avaliar
+Você é uma pessoa neurodivergente?,Neurodivergente,Saude Mental,str,categorica_nominal,46,21.7,alta,sim
+Qual(is) dessas condições se aplicam a você? (selecione todas as que desejar),Condicoes Neurodivergentes,Saude Mental,str,categorica_multilabel,46,47.8,alta,sim
+"Na sua percepção, de que forma a universidade poderia oferecer um suporte mais eficaz a você, na condição de pessoa neurodivergente?",Sugestao Suporte,Feedback,str,texto_livre,46,60.9,baixa,nao
